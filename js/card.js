@@ -54,9 +54,6 @@ electro();
 
 
 
-
-
-
 // //creamos una constante que es igual a una funcion flecha
 //    const electrodomesticos = () =>{
 //     //creamos un for tradicional para que me itere toda la array un dererminado numero de veces
