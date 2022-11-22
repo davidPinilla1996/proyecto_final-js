@@ -54,28 +54,6 @@ electro();
 
 
 
-// //creamos una constante que es igual a una funcion flecha
-//    const electrodomesticos = () =>{
-//     //creamos un for tradicional para que me itere toda la array un dererminado numero de veces
-//     for (let i = 0; i < productos.length; i++) {
-//         //creamos una constante div que es igual a un div creado desde js
-//         const div = document.createElement("div")
-//         //creamos una estrucutra hmtl mediante el metodo inner.HTML
-//         div.innerHTML`
-//         <div class="card_uno">
-//           <img src="${productos.img}" alt="">
-//           <p>${productos.nombre}</p>
-//           <h3>${productos.precio}</h3>
-//         </div>
-//         `;
-//         //insertamos la estrucutra creada de hmtl mediante el metodo innerHML
-//         //al bloque con el id CardContainer, llamado desde el hmtl al js mediante el metodo  document.getElementById.
-//         tarjetas.appendChild(div)
-//     }
-// }
-
-// electrodomesticos();
-
 
 
 
