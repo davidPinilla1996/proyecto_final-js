@@ -38,6 +38,17 @@ electro();
 
 
 
+function filtrarProducto(arr,filtro){
+      const encontrado = arr.find((producto)=>{
+        return producto.nombre.includes(filtro);
+      })
+      return encontrado;
+}
+
+
+let productoEncontrado = filtrarProducto(productos, "Gamer");
+
+console.log(productoEncontrado);
 
 
 
