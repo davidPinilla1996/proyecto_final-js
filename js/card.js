@@ -38,8 +38,9 @@ electro();
 
 
 
+//estamos haciendo una funcion de filtrado por nombre.
 function filtrarProducto(arr,filtro){
-      const encontrado = arr.find((producto)=>{
+      const encontrado = arr.filter((producto)=>{
         return producto.nombre.includes(filtro);
       })
       return encontrado;
@@ -49,6 +50,7 @@ function filtrarProducto(arr,filtro){
 let productoEncontrado = filtrarProducto(productos, "Azus");
 
 localStorage.setItem("producto", productoEncontrado);
+
 
 
 
