@@ -46,9 +46,10 @@ function filtrarProducto(arr,filtro){
 }
 
 
-let productoEncontrado = filtrarProducto(productos, "Gamer");
+let productoEncontrado = filtrarProducto(productos, "Azus");
 
-console.log(productoEncontrado);
+
+
 
 
 
