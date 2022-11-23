@@ -18,9 +18,9 @@ const tarjetas = document.getElementById("CardContainer");
 const electro = () => {
     //cree un ciclo for of donde me itera la array mostrandome los objetos dentro de la array.
     for (const data of productos) {
-        //estoy creando un contenedor div mediante el metodo document.createElement
+        //estoy creando un contenedor div mediante el metodo document.createElement.
         const div = document.createElement("div")
-        //estoy creando una estructura html mediante el metodo innerHTML dentro del div creado 
+        //estoy creando una estructura html mediante el metodo innerHTML dentro del div creado .
         div.innerHTML=`
         <div class="card_uno" id="compus">
         <img src="${data.img}" alt="">
@@ -33,8 +33,19 @@ const electro = () => {
   }  
 }
 
-//estoy llamando(invocando) la funcion electro
+//estoy llamando(invocando) la funcion electro.
 electro();
+
+
+
+//estoy llamando el boton de busqueda del html con el id #btnbuscar  mediante el metodo 
+//document.querySelector y lo estoy guardando en una constante
+const btnBuscar = document.querySelector("#btnbuscar");
+
+
+
+
+
 
 
 
@@ -47,6 +58,8 @@ function filtrarProducto(arr,filtro){
 
 
 let productoEncontrado = filtrarProducto(productos, "Azus");
+
+localStorage.setItem("producto", productoEncontrado);
 
 
 
