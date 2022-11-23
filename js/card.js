@@ -37,35 +37,20 @@ const electro = () => {
 electro();
 
 
-//estoy llamando el boton de busqueda del html con el id #btnbuscar  mediante el metodo 
-//document.querySelector y lo estoy guardando en una constante
-const btnBuscar = document.querySelector("#btnbuscar");
-//estamos llamando al metodo  addEventListener el cual recibe dos parametros el primero el nombre del 
-//evento al que queremos escuchar y despues le pasamos una funcion flecha y dentro de la funcion le pasamos
-// lo que queremos que haga cuando el usuario haga click en el boton de buscar.
-btnBuscar.addEventListener("click", ()=>{
-  console.log("hiciste click");
-})
 
-
-
-
-
-
-
-
-
-
+//estamos haciendo una funcion de filtrado por nombre.
 function filtrarProducto(arr,filtro){
-      const encontrado = arr.find((producto)=>{
+      const encontrado = arr.filter((producto)=>{
         return producto.nombre.includes(filtro);
       })
       return encontrado;
 }
 
 
-let productoEncontrado = filtrarProducto(productos, "Azus");
+let productoEncontrado = filtrarProducto(productos, "Gamer");
 
+
+localStorage.setItem("producto", JSON.stringify( productoEncontrado));
 
 
 
