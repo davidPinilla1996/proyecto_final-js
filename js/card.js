@@ -40,6 +40,13 @@ electro();
 //estoy llamando el boton de busqueda del html con el id #btnbuscar  mediante el metodo 
 //document.querySelector y lo estoy guardando en una constante
 const btnBuscar = document.querySelector("#btnbuscar");
+//estamos llamando al metodo  addEventListener el cual recibe dos parametros el primero el nombre del 
+//evento al que queremos escuchar y despues le pasamos una funcion flecha y dentro de la funcion le pasamos
+// lo que queremos que haga cuando el usuario haga click en el boton de buscar.
+btnBuscar.addEventListener("click", ()=>{
+  console.log("hiciste click");
+})
+
 
 
 
