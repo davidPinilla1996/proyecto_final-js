@@ -37,6 +37,17 @@ const electro = () => {
 electro();
 
 
+//estoy llamando el boton de busqueda del html con el id #btnbuscar  mediante el metodo 
+//document.querySelector y lo estoy guardando en una constante
+const btnBuscar = document.querySelector("#btnbuscar");
+
+
+
+
+
+
+
+
 
 function filtrarProducto(arr,filtro){
       const encontrado = arr.find((producto)=>{
