@@ -47,12 +47,9 @@ function filtrarProducto(arr,filtro){
 }
 
 
-//boton de busqueda
-inputSearch.addEventListener("input",()=>{
-  const encontrado = filtrarProducto(productos,inputSearch.value)
-  console.log(encontrado);
-})
+let productoEncontrado = filtrarProducto(productos, "Gam")
 
+console.log(productoEncontrado);
 
 
 
