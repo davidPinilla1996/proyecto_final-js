@@ -46,13 +46,16 @@ function filtrarProducto(arr,filtro){
       return encontrado;
 }
 
+//guardando el resultado de la funcion filtro en una variable;
+let productoEncontrado = filtrarProducto(productos, "Gam");
 
-let productoEncontrado = filtrarProducto(productos, "Azus");
+//medianto el metodo JSON.stringify convertimos el objeto encontrado en formato json para trabajarlo mejor.
+localStorage.setItem("producto", JSON.stringify(productoEncontrado));
 
-localStorage.setItem("producto", productoEncontrado);
+//estamos recuperando el objeto guardado en el repositorio local 
+let productoRecuperado = JSON.parse(localStorage.getItem("producto"));
 
-
-
+console.log(productoRecuperado);
 
 
 
